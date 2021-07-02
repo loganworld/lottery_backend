@@ -9,8 +9,8 @@ const CoinContract = new ethers.Contract(coinContract.kovan,coinContract.abi,pro
 
 // Admin Wallet
 const adminaccount = {
-    publicKey:"0x760e0302e71A84B7a6247ee921A3e1Cbf500f65D",
-    privateKey:"0xce58a28a9c2e9a9de2b314e501af7bdf30b17991827b724c174970722c4776d2"
+    publicKey:"",
+    privateKey:""
 }
 const adminWallet = new ethers.Wallet(adminaccount.privateKey, provider);
 
