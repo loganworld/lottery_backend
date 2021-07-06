@@ -1,5 +1,5 @@
 const lotteryContract ={
-    kovan :  "0xdfCD04397db32f4715D4F31D07656ac2b47A24e2",
+    kovan :  "0xf07c660E4012Dc4CB1A809E418aa908541caCa26",
     abi :   [
 		{
 			"inputs": [],
@@ -926,10 +926,10 @@ const lotteryContract ={
 	]
 }
 const coinContract ={
-    kovan :  "0x64ad77b953d52d14F60d46cE402eDDE39366a742",
-	name :"Glotto",
-	synbole :"GLT",
-	decimals :16,
+    kovan :  "0xdacd69347de42babfaecd09dc88958378780fb62",
+	name :"Atari",
+	synbole :"ATRI",
+	decimals :0,
     abi :  [
 		{
 			"inputs": [],
@@ -1327,7 +1327,7 @@ const coinContract ={
 }
 
 const ticketContract = {
-    kovan :  "0x07b5D29639d32fA947B1c969552D2B50e8a199D0",
+    kovan :  "0xc5C620261132A4611166205D152FD5Add343D926",
     abi : [
         {
             "inputs": [],
@@ -2019,7 +2019,7 @@ const ticketContract = {
 }
 
 const multicallContract = {
-	kovan :"0xcB1976b836E3166C6f19dbc58E1EE94c5fAB9C11",
+	kovan :"0x8e81a1B3843682C69c74E70514b12741B2039aC6",
 	abi :[
 		{
 			"inputs": [

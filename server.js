@@ -35,8 +35,6 @@ app.use(bodyParser.json());
 
 // Passport middleware
 app.use(passport.initialize());
-
-var web3 = new Web3(new Web3.providers.HttpProvider("https://bsc-dataseed.binance.org/"));
 // our server instance
 const server = http.createServer(app);
 
@@ -55,8 +53,8 @@ async function getParseTime (){
   console.log(Date.now())
   console.log(nextParse,nextDraw);
   
-  let parseDate = new Date(nextParse*1000);
-  let drawDate = new Date(nextDraw*1000);
+  let parseDate = new Date(nextParse*1000+60000);
+  let drawDate = new Date(nextDraw*1000+60000);
 
   let parseFormatTime = parseDate.getSeconds()+" "+parseDate.getMinutes()+" "+parseDate.getHours()+" "+parseDate.getDate()+" "+(Number(parseDate.getMonth())+1)+" *";
   console.log(parseFormatTime) 
@@ -91,6 +89,7 @@ async function drawandreset(){
 async function startParse(){
   await parseCall();
 }
+// InitializeCall();
 // startParse();
 // drawandreset();
 getParseTime();
